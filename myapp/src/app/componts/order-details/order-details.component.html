@@ -1,0 +1,24 @@
+<a routerLink="/order">
+  
+  <i class="fas fa-arrow-alt-circle-left"></i>
+</a>
+    <div class="row"  >
+    <div class="oneOrder"  > 
+        <div class="mycard order-item ">
+            <a routerLink="/order/{{orders?.id}}">
+          <img src="assets/img/{{orders?.img}}.jpg" alt="Denim Jeans">
+                </a>
+                <a routerLink="/order/{{orders?.id}}">
+          <h1>{{orders?.name}}</h1>
+        </a>
+          <h2>{{orders?.data_create}}</h2>
+          <p class="price">{{orders?.price}} $</p>
+          <p class="dis">{{orders?.description}}</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+
+

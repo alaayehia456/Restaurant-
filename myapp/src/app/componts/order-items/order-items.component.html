@@ -1,0 +1,17 @@
+
+<div class="row">
+<div *ngFor="let temp of orders" class="col-md-4  myorder"> 
+    <div class="card" style="width:100%" style="height:400px">
+      <a routerLink="/order/{{temp.id}}">
+      <img src="assets/img/{{temp.img}}.jpg" alt="Denim Jeans"  style="width:100%" style="height:200px">
+      </a>
+      <a routerLink="/order/{{temp.name}}">
+      <h1>{{temp.name}}</h1>
+      </a>
+      <h2>{{temp.data_create}}</h2>
+      <p class="price">{{temp.price}}</p>
+      
+      <button class="btn btn-primary">Add to Cart</button>
+    </div>
+  </div>
+</div>
